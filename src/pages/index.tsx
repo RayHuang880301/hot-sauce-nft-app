@@ -7,7 +7,7 @@ import Intro from "../components/intro/Intro";
 import Mint from "../components/mint/Mint";
 import Mdd from "../components/mdd/Mdd";
 import Footer from "../components/footer/Footer";
-import Faq from "../components/faq/faq";
+import Faq from "../components/faq/Faq";
 
 const inter = Inter({ subsets: ["latin"] });
 
