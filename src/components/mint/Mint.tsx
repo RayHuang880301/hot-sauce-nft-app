@@ -5,7 +5,7 @@ import nftImg from "../../assets/nftImg.png";
 
 export default function Mint() {
 	return (
-		<div className={styles.section}>
+		<div id="mint" className={styles.section}>
 			<div className={styles.container}>
 				<Image
 					className={styles.img}

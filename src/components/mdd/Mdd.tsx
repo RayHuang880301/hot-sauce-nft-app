@@ -7,7 +7,7 @@ import dcLogo from "../../assets/dcLogo.svg";
 
 export default function Mdd() {
 	return (
-		<div className={styles.section}>
+		<div id="mdd" className={styles.section}>
 			<div className={styles.container}>
 				<Image
 					className={styles.img}

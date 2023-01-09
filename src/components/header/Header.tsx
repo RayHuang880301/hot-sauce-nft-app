@@ -15,16 +15,16 @@ export default function Header() {
 			<Image src={iconImg.src} width="75px" alt="icon" />
 			<div className={styles.box}>
 				<div className={styles.selector}>
-					<Link href={"/" as Url}>
+					<Link href="#intro">
 						<div className={styles.btn}>About</div>
 					</Link>
-					<Link href={"/" as Url}>
+					<Link href="#mint">
 						<div className={styles.btn}>Mint</div>
 					</Link>
-					<Link href={"/" as Url}>
+					<Link href="#mdd">
 						<div className={styles.btn}>Team</div>
 					</Link>
-					<Link href={"/" as Url}>
+					<Link href="#faq">
 						<div className={styles.btn}>FAQs</div>
 					</Link>
 				</div>

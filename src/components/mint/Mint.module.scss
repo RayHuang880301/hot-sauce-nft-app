@@ -3,10 +3,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url('../../assets/bg2.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-color: black;
+  // background-image: url('../../assets/bg2.png');
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: cover;
   height: 100vh;
   width: 100%;
   z-index: 1;
@@ -66,5 +67,33 @@
     background-color: #fff;
     color: #C80000;
     border: 1px solid #C80000;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    height: 100%;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .img {
+    margin: 0 0 2rem 0;
+    width: 100%;
+  }
+  .Box {
+    width: 100%;
+    margin: 0 0 2rem 0;
+  }
+  .btnBox {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn {
+    margin: 1rem 0;
+    width: 200px;
   }
 }
