@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Faq.module.scss";
-import faqJSON from "../../assets/faq.json";
+import faqJSON from "../../data/faq.json";
 import { Image } from "@chakra-ui/react";
 import pinkCircleImg from "../../assets/pinkCircle.svg";
 import pinkVectorImg from "../../assets/pinkVector.svg";

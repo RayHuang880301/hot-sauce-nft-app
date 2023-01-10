@@ -26,7 +26,7 @@ export default function Mint() {
 						of all 7 NFTs will be airdropped a unique interactive NFT.
 						<br />
 						<br />
-						Users can pay with ETH or Paypal. The price to mint is 0.05ETH or
+						Users can pay with ETH or Paypal. The price to mint is 0.05 ETH or
 						$50 USD.
 					</p>
 					<div className={styles.btnBox}>

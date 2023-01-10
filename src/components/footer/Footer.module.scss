@@ -42,6 +42,11 @@
   }
 
   .contactBox {
-    margin: 0 2rem;
+    margin: 1rem 0;
+    align-items: center;
+
+    p {
+      margin-bottom: 0;
+    }
   }
 }

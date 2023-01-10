@@ -17,7 +17,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 75%;
+  width: 80%;
 }
 
 .img {
@@ -47,26 +47,23 @@
 
 .marquee {
   display: flex;
-  align-items: center;
+  align-items: center ;
+  // justify-content: flex-start;
   padding: 0.5rem 0;
   background: #FFFFFF;
   overflow: hidden;
-  position: relative;
+  // position: absolute;
   width: 200%;
-
+  
   .marqueeItem {
     font-size: 28px;
+    // position: absolute;
+    // overflow: hidden;
+    margin: 0 1rem;
+    // width: 200px;
+    animation: marquee 5s linear infinite;
   }
 }
-
-.marquee div {
-  display: flex;
-  // position: absolute;
-  overflow: hidden;
-  margin: 0 1rem;
-  animation: marquee 5s linear infinite;
-}
-
 @keyframes marquee {
   0% { transform: translateX(100%); }
   100% { transform: translateX(0%); }
@@ -74,10 +71,7 @@
 
 @media screen and (max-width: 768px) {
   .section {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    height: 100%;
     width: 100%;
   }
 
@@ -87,6 +81,7 @@
     align-items: center;
     justify-content: center;
     width: 90%;
+    margin: 2rem 0;
   }
 
   .img {
@@ -99,15 +94,25 @@
     flex-direction: column;
     width: 100%;
     margin: 1rem 0;
+
+    h1 {
+      margin: 0 0 1rem 0;
+      font-size: 24px;
+    }
+
+    p {
+      margin: 0;
+      line-height: 1.2rem;
+    }
   }
 
-  .marquee {
-    display: flex;
-    align-items: center;
-    padding: 0.5rem 0;
-    background: #FFFFFF;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-  }
+  // .marquee {
+  //   display: flex;
+  //   align-items: center;
+  //   padding: 0.5rem 0;
+  //   background: #FFFFFF;
+  //   overflow: hidden;
+  //   position: relative;
+  //   width: 100%;
+  // }
 }
