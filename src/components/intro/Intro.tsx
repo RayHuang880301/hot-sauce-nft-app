@@ -6,6 +6,7 @@ import rectImg from "../../assets/rect.png";
 export default function Intro() {
 	return (
 		<div id="intro" className={styles.section}>
+			<div></div>
 			<div className={styles.container}>
 				<Image className={styles.img} src={rectImg.src} alt="rectangle" />
 				<div className={styles.box}>
