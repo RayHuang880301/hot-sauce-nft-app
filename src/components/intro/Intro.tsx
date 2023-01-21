@@ -27,14 +27,19 @@ export default function Intro() {
 				</div>
 			</div>
 			<div className={styles.marquee}>
-				<div className={styles.marqueeItem}>Hot Sauce NFT</div>
-				<div className={styles.marqueeItem}>Hot Sauce NFT</div>
-				<div className={styles.marqueeItem}>Hot Sauce NFT</div>
-				<div className={styles.marqueeItem}>Hot Sauce NFT</div>
-				<div className={styles.marqueeItem}>Hot Sauce NFT</div>
-				<div className={styles.marqueeItem}>Hot Sauce NFT</div>
-				<div className={styles.marqueeItem}>Hot Sauce NFT</div>
-				<div className={styles.marqueeItem}>Hot Sauce NFT</div>
+				<div>
+					<span>Hot Sauce NFT</span>
+					<span>Hot Sauce NFT</span>
+					<span>Hot Sauce NFT</span>
+					<span>Hot Sauce NFT</span>
+					<span>Hot Sauce NFT</span>
+					<span>Hot Sauce NFT</span>
+					<span>Hot Sauce NFT</span>
+					<span>Hot Sauce NFT</span>
+					<span>Hot Sauce NFT</span>
+					<span>Hot Sauce NFT</span>
+					<span>Hot Sauce NFT</span>
+				</div>
 			</div>
 		</div>
 	);
