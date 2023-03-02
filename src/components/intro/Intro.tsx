@@ -8,7 +8,10 @@ export default function Intro() {
 		<div id="intro" className={styles.section}>
 			<div></div>
 			<div className={styles.container}>
-				<Image className={styles.img} src={rectImg.src} alt="rectangle" />
+				{/* <Image className={styles.img} src={rectImg.src} alt="rectangle" /> */}
+				<video className={styles.img} controls autoPlay loop muted>
+					<source src="/nft.mov" type="video/mp4"></source>
+				</video>
 				<div className={styles.box}>
 					<h1>What is the HOT SAUCE NFT</h1>
 					<p>

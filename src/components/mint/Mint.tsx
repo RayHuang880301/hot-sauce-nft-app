@@ -30,8 +30,8 @@ export default function Mint() {
 						$50 USD.
 					</p>
 					<div className={styles.btnBox}>
-						<Button className={styles.btn}>Mint by Crypto</Button>
-						<Button className={styles.btn}>Mint by VISA</Button>
+						<Button className={styles.btn}>Mint</Button>
+						{/* <Button className={styles.btn}>Mint by VISA</Button> */}
 					</div>
 				</div>
 			</div>
