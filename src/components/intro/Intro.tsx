@@ -13,10 +13,10 @@ export default function Intro() {
 
 						<video
 								className={styles.videoItem}
-								controls="controls"
-								autoPlay="autoPlay"
-								loop="loop"
-								muted="muted">
+								controls={true}
+								autoPlay={true}
+								loop={true}
+								muted={true}>
 								<source src="/nft.mov" type="video/mp4"></source>
 						</video>
 						<div className={styles.videoMarquee}>
@@ -57,21 +57,6 @@ export default function Intro() {
 						Each purchase of a HOT SAUCE NFT supports MDD to create exciting new
 						music.
 					</p>
-				</div>
-			</div>
-			<div className={styles.marquee}>
-				<div>
-					<span>Hot Sauce NFT</span>
-					<span>Hot Sauce NFT</span>
-					<span>Hot Sauce NFT</span>
-					<span>Hot Sauce NFT</span>
-					<span>Hot Sauce NFT</span>
-					<span>Hot Sauce NFT</span>
-					<span>Hot Sauce NFT</span>
-					<span>Hot Sauce NFT</span>
-					<span>Hot Sauce NFT</span>
-					<span>Hot Sauce NFT</span>
-					<span>Hot Sauce NFT</span>
 				</div>
 			</div>
 		</div>

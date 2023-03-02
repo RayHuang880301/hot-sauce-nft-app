@@ -6,6 +6,7 @@ import nftImg from "../../assets/nftImg.png";
 export default function Mint() {
 	return (
 		<div id="mint" className={styles.section}>
+			<div></div>
 			<div className={styles.container}>
 				<Image
 					className={styles.img}
@@ -33,6 +34,21 @@ export default function Mint() {
 						<Button className={styles.btn}>Mint</Button>
 						{/* <Button className={styles.btn}>Mint by VISA</Button> */}
 					</div>
+				</div>
+			</div>
+			<div className={styles.marquee}>
+				<div>
+					<span>Hot Sauce NFT</span>
+					<span>Hot Sauce NFT</span>
+					<span>Hot Sauce NFT</span>
+					<span>Hot Sauce NFT</span>
+					<span>Hot Sauce NFT</span>
+					<span>Hot Sauce NFT</span>
+					<span>Hot Sauce NFT</span>
+					<span>Hot Sauce NFT</span>
+					<span>Hot Sauce NFT</span>
+					<span>Hot Sauce NFT</span>
+					<span>Hot Sauce NFT</span>
 				</div>
 			</div>
 		</div>

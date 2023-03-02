@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   background-color: black;
   // background-image: url('../../assets/bg2.png');
   // background-repeat: no-repeat;
@@ -70,6 +70,43 @@
   }
 }
 
+
+.marquee {
+  display: flex;
+  align-items: center ;
+  // justify-content: flex-start;
+  // padding: 0.5rem 0;
+  // height: 25px;
+  background: #FFFFFF;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.marquee div {
+  font-size: 30px;
+  // // display: block;
+  // width: 200%;
+  // height: 30px;
+  // background: #FFFFFF;
+  margin: 0.2rem 0;
+  white-space: nowrap;
+  position: relative;
+  // overflow: hidden;
+
+  animation: marquee 5s linear infinite;
+}
+
+.marquee span {
+  padding-right: 1.5rem;
+  color: black
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-226.32px); }
+}
+
 @media screen and (max-width: 768px) {
   .section {
     justify-content: flex-start;
@@ -88,7 +125,7 @@
   }
   .Box {
     width: 100%;
-    margin: 0 0 1rem 0;
+    margin: 1rem 0;
 
     p {
       line-height: 1.2rem;

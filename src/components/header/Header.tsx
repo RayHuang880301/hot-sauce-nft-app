@@ -80,7 +80,7 @@ export default function Header() {
 						</Link>
 						<Link href="#mdd">
 							<div className={styles.btn} onClick={onClose}>
-								Team
+								MDD
 							</div>
 						</Link>
 						<Link href="#faq">
