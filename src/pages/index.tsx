@@ -8,6 +8,7 @@ import Mint from "../components/mint/Mint";
 import Mdd from "../components/mdd/Mdd";
 import Footer from "../components/footer/Footer";
 import Faq from "../components/faq/Faq";
+import Pluto from "../components/pluto/Pluto";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,7 +27,7 @@ export default function Home() {
 				<Mint />
 				<Mdd />
 				<Faq />
-				<Footer />
+				<Pluto />
 			</main>
 		</>
 	);
