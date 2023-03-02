@@ -9,10 +9,12 @@ export default function Main() {
 	return (
 		<div className={styles.section}>
 			<Header />
-			<Image src={bottleImg.src} width="450px" alt="bottle" />
-			<div className={styles.box}>
-				<h1>Scroll Down</h1>
-				<Image src={arrowImg.src} alt="arrow" />
+			<div className={styles.cotent}>
+				<Image src={bottleImg.src} width="450px" alt="bottle" />
+				<div className={styles.box}>
+					<h1>Scroll Down</h1>
+					<Image src={arrowImg.src} alt="arrow" />
+				</div>
 			</div>
 		</div>
 	);
