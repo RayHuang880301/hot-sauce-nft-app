@@ -8,15 +8,13 @@ export default function Intro() {
 		<div id="intro" className={styles.section}>
 			<div></div>
 			<div className={styles.container}>
-				{/* <Image className={styles.img} src={rectImg.src} alt="rectangle" /> */}
 				<div className={styles.videoBox}>
 
 						<video
 								className={styles.videoItem}
 								controls={true}
 								autoPlay={true}
-								loop={true}
-								muted={true}>
+								loop={true}>
 								<source src="/nft.mov" type="video/mp4"></source>
 						</video>
 						<div className={styles.videoMarquee}>

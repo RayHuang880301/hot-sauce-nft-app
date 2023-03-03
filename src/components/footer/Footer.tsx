@@ -9,7 +9,7 @@ import webImg from "../../assets/web.svg";
 export default function Footer() {
 	return (
 		<div className={styles.container}>
-			<Image src={iconFooter.src} width="150px" alt="icon" />
+			<Image src={iconFooter.src} width="120px" alt="icon" />
 			<div className={styles.contactBox}>
 				<div className={styles.iconBox}>
 					<Image className={styles.img} src={emailImg.src} alt="icon" />

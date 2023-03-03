@@ -23,7 +23,7 @@ export default function Header() {
 	const { isOpen, onOpen, onClose } = useDisclosure();
 	return (
 		<div className={styles.header}>
-			<Image src={iconImg.src} width="75px" alt="icon" />
+			<Image src={iconImg.src} width="70px" alt="icon" />
 			{isTabletOrMobile ? (
 				<div className={styles.boxMobile}>
 					<ConnectButton />
@@ -31,7 +31,7 @@ export default function Header() {
 						className={styles.navIcon}
 						src={navIcon.src}
 						onClick={onOpen}
-						width="45px"
+						width="35px"
 						alt="icon"
 					/>
 				</div>
@@ -59,7 +59,7 @@ export default function Header() {
 				<DrawerOverlay className={styles.drawerContent} />
 				<DrawerContent>
 					<DrawerHeader className={styles.drawerHeader}>
-						<Image src={iconImg.src} width="100px" alt="icon" />
+						<Image src={iconImg.src} width="80px" alt="icon" />
 						<Image
 							src={closeIcon.src}
 							width="20px"
