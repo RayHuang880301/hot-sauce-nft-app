@@ -18,10 +18,8 @@ export default function Mdd() {
           alt="mdd"
           transition={"all 0.5s ease"}
           _hover={{
-            transform: "scale(1.1)",
-            filter: "blur(0px)",
+            transform: "scale(1.05)",
           }}
-          filter="blur(10px)"
         />
         <div className={styles.Box}>
           <h1>
@@ -68,8 +66,20 @@ export default function Mdd() {
                 className={styles.icon}
                 src={twitterLogo.src}
                 alt="twitter"
+                transition={"all 0.2s ease"}
+                _hover={{
+                  transform: "scale(1.1)",
+                }}
               />
-              <Image className={styles.icon} src={dcLogo.src} alt="discord" />
+              <Image
+                className={styles.icon}
+                src={dcLogo.src}
+                alt="discord"
+                transition={"all 0.2s ease"}
+                _hover={{
+                  transform: "scale(1.1)",
+                }}
+              />
             </div>
           )}
         </div>
