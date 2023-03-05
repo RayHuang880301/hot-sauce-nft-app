@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Intro.module.scss";
 import { Image } from "@chakra-ui/react";
 import rectImg from "../../assets/rect.png";
+import nftVideo from "../../assets/nftVideo.gif";
 
 export default function Intro() {
   return (
@@ -9,15 +10,7 @@ export default function Intro() {
       <div></div>
       <div className={styles.container}>
         <div className={styles.videoBox}>
-          <video
-            className={styles.videoItem}
-            controls={true}
-            autoPlay={true}
-            muted={true}
-            loop={true}
-          >
-            <source src="/nft.mov" type="video/mp4"></source>
-          </video>
+          <Image className={styles.videoItem} src={nftVideo.src}></Image>
           <div className={styles.videoMarquee}>
             <div className={styles.videoMarqueeItem}>
               <img src="/nft1.gif" />
