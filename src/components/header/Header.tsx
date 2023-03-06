@@ -24,7 +24,14 @@ export default function Header() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <div className={styles.header}>
-      <Image src={iconImg.src} width="70px" alt="icon" />
+      <Image
+        src={iconImg.src}
+        width="70px"
+        alt="icon"
+        transition="all 0.2s ease-in-out"
+        cursor={"pointer"}
+        _hover={{ transform: "scale(1.1)" }}
+      />
       {isTabletOrMobile ? (
         <div className={styles.boxMobile}>
           <ConnectButton />
