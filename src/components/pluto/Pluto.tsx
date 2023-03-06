@@ -24,7 +24,15 @@ export default function Pluto() {
           developing a community of music lovers in the web3 and NFT world.
         </span>
         <Link href="https://plutolab.io/" target="_blank">
-          <Button className={styles.btn}>More About Pluto</Button>
+          <Button
+            className={styles.btn}
+            transition="all 0.2s ease-in-out"
+            cursor={"pointer"}
+            _hover={{ transform: "scale(1.1)" }}
+            _active={{ transform: "scale(0.9)" }}
+          >
+            More About Pluto
+          </Button>
         </Link>
       </div>
       <Footer />

@@ -34,7 +34,15 @@ export default function Mint() {
             Users can pay with ETH or Paypal. The price to mint is 0.05 ETH
           </p>
           <div className={styles.btnBox}>
-            <Button className={styles.btn}>Mint</Button>
+            <Button
+              className={styles.btn}
+              transition="all 0.2s ease-in-out"
+              cursor={"pointer"}
+              _hover={{ transform: "scale(1.1)" }}
+              _active={{ transform: "scale(0.9)" }}
+            >
+              Mint
+            </Button>
             {/* <Button className={styles.btn}>Mint by VISA</Button> */}
           </div>
         </div>
