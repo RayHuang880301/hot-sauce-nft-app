@@ -31,7 +31,7 @@
   flex-direction: column;
   width: 40%;
   margin: 0 2rem;
-  
+
   h1 {
     font-size: 32px;
     color: #fff;
@@ -56,28 +56,27 @@
   justify-content: space-between;
 
   .btn {
-    background-color: #C80000;
+    background-color: #c80000;
     color: #fff;
     border: 1px solid #fff;
-    padding : 1rem 3rem;
+    padding: 1rem 3.5rem;
     border-radius: 10px;
     font-size: 18px;
   }
   .btn:hover {
     background-color: #fff;
-    color: #C80000;
-    border: 1px solid #C80000;
+    color: #c80000;
+    border: 1px solid #c80000;
   }
 }
 
-
 .marquee {
   display: flex;
-  align-items: center ;
+  align-items: center;
   // justify-content: flex-start;
   // padding: 0.5rem 0;
   // height: 25px;
-  background: #FFFFFF;
+  background: #ffffff;
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -99,12 +98,16 @@
 
 .marquee span {
   padding-right: 1.5rem;
-  color: black
+  color: black;
 }
 
 @keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-226.32px); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-226.32px);
+  }
 }
 
 @media screen and (max-width: 768px) {
