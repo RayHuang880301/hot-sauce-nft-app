@@ -19,7 +19,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 const queryClient = new QueryClient();
 
 const { chains, provider } = configureChains(
-  [mainnet, goerli],
+  [goerli],
   [alchemyProvider({ apiKey: APP_ALCHEMY_ID }), publicProvider()]
 );
 
