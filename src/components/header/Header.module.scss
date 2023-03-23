@@ -37,6 +37,18 @@
   transform: scale(1.1);
 }
 
+.langBtn {
+  margin: 0 1rem;
+  font-size: 16px;
+  color: white;
+  opacity: 0.8;
+  transition: all 0.2s ease-in-out;
+}
+
+.langBtn:hover {
+  transform: scale(1.1);
+}
+
 .navIcon {
   margin-left: 1rem;
   cursor: pointer;
