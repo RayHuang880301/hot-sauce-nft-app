@@ -25,8 +25,12 @@ export default function Header() {
 
   const { isTabletOrMobile } = useDeviceDetect();
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const changeLang = (lang: string) => {
-    i18n.changeLanguage(lang);
+  const changeLang = () => {
+    if(i18n.language === 'en') {
+      i18n.changeLanguage('zh');
+    } else {
+      i18n.changeLanguage('en');
+    }
     onClose();
   }
   return (
@@ -65,11 +69,8 @@ export default function Header() {
             <Link href="#faq">
               <Box className={styles.btn}>{t('FAQs')}</Box>
             </Link>
-            <Link href="#" onClick={() => changeLang('en')}>
-              <Box className={styles.btn}>English</Box>
-            </Link>
-            <Link href="#" onClick={() => changeLang('zh')}>
-              <Box className={styles.btn}>繁體中文</Box>
+            <Link href="#" onClick={() => changeLang()}>
+              <Box className={styles.btn}>EN/繁中</Box>
             </Link>
           </div>
           <ConnectButton />
@@ -110,13 +111,8 @@ export default function Header() {
               </div>
             </Link>
             <Link href="#">
-              <div className={styles.btn} onClick={() => changeLang('en')}>
-                English
-              </div>
-            </Link>
-            <Link href="#">
-              <div className={styles.btn} onClick={() => changeLang('zh')}>
-                繁體中文
+              <div className={styles.btn} onClick={() => changeLang()}>
+                EN/繁中
               </div>
             </Link>
           </DrawerBody>
