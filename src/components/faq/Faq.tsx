@@ -6,13 +6,16 @@ import pinkCircleImg from "../../assets/pinkCircle.svg";
 import pinkVectorImg from "../../assets/pinkVector.svg";
 import redCircleImg from "../../assets/redCircle.svg";
 import redVectorImg from "../../assets/redVector.svg";
+import i18n from '../../i18n/i18n';
 
 export default function Faq() {
+  const { t } = i18n;
+
   const [questionIdx, setQuestionIdx] = useState(0);
   return (
     <div id="faq" className={styles.section}>
       <div className={styles.container}>
-        <h1 className={styles.title}>FAQs</h1>
+        <h1 className={styles.title}>{t('FAQs')}</h1>
         <div className={styles.box}>
           <div className={styles.questionBox}>
             {faqJSON.map((faq, idx) => (

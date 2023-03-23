@@ -25,8 +25,10 @@ import {
   useSigner,
 } from "wagmi";
 import { useQuery } from "@tanstack/react-query";
+import i18n from '../../i18n/i18n';
 
 export default function Mint() {
+  const { t } = i18n;
   const price = utils.parseEther("0.05");
   const toast = useToast();
   const { address, isConnected } = useAccount();
@@ -140,19 +142,15 @@ export default function Mint() {
           }}
         />
         <div className={styles.Box}>
-          <h1>How do I purchase a HOT SAUCE NFT?</h1>
+          <h1>{t('How do I purchase a HOT SAUCE NFT?')}</h1>
           <p>
-            HOT SAUCE NFTs are only available to mint at *website*. After
-            minting, owners can list their NFT for resale secondary marketplace
-            (Opensea).
+            {t('HOT SAUCE NFTs are only available to mint at *website*. After minting, owners can list their NFT for resale secondary marketplace (Opensea).')}
             <br />
             <br />
-            Each limited edition NFT can be minted until it is sold out. Then
-            the next limited edition NFT will be available for minting. Owners
-            of all 7 NFTs will be airdropped a unique interactive NFT.
+            {t('Each limited edition NFT can be minted until it is sold out. Then the next limited edition NFT will be available for minting. Owners of all 7 NFTs will be airdropped a unique interactive NFT.')}
             <br />
             <br />
-            Users can pay with ETH. The price to mint is 0.05 ETH
+            {t('Users can pay with ETH. The price to mint is 0.05 ETH')}
           </p>
           <Flex lineHeight={"2rem"}>
             <Box fontSize={"4xl"} fontWeight={"bold"} color={"#fff"} my="2">

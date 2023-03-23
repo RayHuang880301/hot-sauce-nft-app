@@ -18,8 +18,11 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import { useDeviceDetect } from "../../utils/mediaQuery";
+import i18n from '../../i18n/i18n';
 
 export default function Header() {
+  const { t } = i18n;
+
   const { isTabletOrMobile } = useDeviceDetect();
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
@@ -47,16 +50,16 @@ export default function Header() {
         <div className={styles.box}>
           <div className={styles.selector}>
             <Link href="#intro">
-              <Box className={styles.btn}>About</Box>
+              <Box className={styles.btn}>{t('About')}</Box>
             </Link>
             <Link href="#mint">
-              <Box className={styles.btn}>Mint</Box>
+              <Box className={styles.btn}>{t('Mint')}</Box>
             </Link>
             <Link href="#mdd">
-              <Box className={styles.btn}>Team</Box>
+              <Box className={styles.btn}>{t('Team')}</Box>
             </Link>
             <Link href="#faq">
-              <Box className={styles.btn}>FAQs</Box>
+              <Box className={styles.btn}>{t('FAQs')}</Box>
             </Link>
           </div>
           <ConnectButton />
@@ -78,22 +81,22 @@ export default function Header() {
           <DrawerBody className={styles.drawerBody}>
             <Link href="#intro">
               <div className={styles.btn} onClick={onClose}>
-                About
+                {t('About')}
               </div>
             </Link>
             <Link href="#mint">
               <div className={styles.btn} onClick={onClose}>
-                Mint
+                {t('Mint')}
               </div>
             </Link>
             <Link href="#mdd">
               <div className={styles.btn} onClick={onClose}>
-                MDD
+                {t('MDD')}
               </div>
             </Link>
             <Link href="#faq">
               <div className={styles.btn} onClick={onClose}>
-                FAQs
+                {t('FAQs')}
               </div>
             </Link>
           </DrawerBody>

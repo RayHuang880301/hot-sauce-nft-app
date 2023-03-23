@@ -5,6 +5,7 @@ import iconFooter from "../../assets/iconFooter.png";
 import emailImg from "../../assets/email.svg";
 import igImg from "../../assets/ig.svg";
 import webImg from "../../assets/web.svg";
+import i18n from '../../i18n/i18n';
 
 export default function Footer() {
   return (

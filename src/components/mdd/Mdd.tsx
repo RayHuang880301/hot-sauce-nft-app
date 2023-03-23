@@ -5,8 +5,10 @@ import mddImg from "../../assets/mdd.png";
 import twitterLogo from "../../assets/twLogo.svg";
 import dcLogo from "../../assets/dcLogo.svg";
 import { useDeviceDetect } from "../../utils/mediaQuery";
+import i18n from '../../i18n/i18n';
 
 export default function Mdd() {
+  const { t } = i18n;
   const { isTabletOrMobile } = useDeviceDetect();
   return (
     <div id="mdd" className={styles.section}>
@@ -44,19 +46,12 @@ export default function Mdd() {
             )}
           </h1>
           <p>
-            周立銘 MDD, formerly known as MACHI DIDI, is a Taiwanese-American
-            musician, DJ, and producer.
-            <br /> Coming to fame in 2003 with the group Machi, he is now a solo
-            artist, performing his music at nightclubs and music festivals in
-            Asia. Besides his own solo projects, he has produced music for many
-            high-profile artists. His music has amassed tens of millions of
-            streams across Spotify, KKbox, Youtube, and other platforms.
+            {t('周立銘 MDD, formerly known as MACHI DIDI, is a Taiwanese-American musician, DJ, and producer.')}
+            <br /> {t('Coming to fame in 2003 with the group Machi, he is now a solo artist, performing his music at nightclubs and music festivals in Asia. Besides his own solo projects, he has produced music for many high-profile artists. His music has amassed tens of millions of streams across Spotify, KKbox, Youtube, and other platforms.')}
             <br />
-            Only two things interest MDD - music and crypto.
+            {t('Only two things interest MDD - music and crypto.')}
             <br />
-            By showing your support and minting a limited edition HOT SAUCE NFT,
-            we can further the vision to combine music and blockchain technology
-            to advance music culture.
+            {t('By showing your support and minting a limited edition HOT SAUCE NFT,  we can further the vision to combine music and blockchain technology  to advance music culture.')}
           </p>
           {isTabletOrMobile ? (
             <></>

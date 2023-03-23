@@ -14,6 +14,7 @@ import { publicProvider } from "wagmi/providers/public";
 import { APP_ALCHEMY_ID } from "../config";
 import theme from "../styles/theme";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import "../i18n/i18n";
 
 // Create a client
 const queryClient = new QueryClient();
