@@ -125,7 +125,13 @@ export default function Header() {
             </Link>
             <Link href="#">
               <div className={styles.langBtn} onClick={() => changeLang()}>
-                EN/繁中
+                <span style={i18n.language === "en" ? STYLES.SELECTED : {}}>
+                  EN
+                </span>
+                /
+                <span style={i18n.language === "zh" ? STYLES.SELECTED : {}}>
+                  繁中
+                </span>
               </div>
             </Link>
           </DrawerBody>
