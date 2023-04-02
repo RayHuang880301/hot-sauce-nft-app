@@ -65,9 +65,9 @@ export default function Header() {
             <Link href="#intro">
               <Box className={styles.btn}>{t("About")}</Box>
             </Link>
-            <Link href="#mint">
+            {/* <Link href="#mint">
               <Box className={styles.btn}>{t("Mint")}</Box>
-            </Link>
+            </Link> */}
             <Link href="#mdd">
               <Box className={styles.btn}>{t("Team")}</Box>
             </Link>
@@ -108,11 +108,11 @@ export default function Header() {
                 {t("About")}
               </div>
             </Link>
-            <Link href="#mint">
+            {/* <Link href="#mint">
               <div className={styles.btn} onClick={onClose}>
                 {t("Mint")}
               </div>
-            </Link>
+            </Link> */}
             <Link href="#mdd">
               <div className={styles.btn} onClick={onClose}>
                 {t("MDD")}
